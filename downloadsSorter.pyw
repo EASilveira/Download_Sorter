@@ -53,8 +53,4 @@ for filename in os.listdir():
                     print(f'{filename:<50}{arrow:^5}{folder}\n')
                     moved = 1
 
-    if moved == 0 and os.path.isfile(f'{os.getcwd()}\\{filename.title()}'):
-        shutil.move(f'{os.getcwd()}\\{filename.title()}', f'{os.getcwd()}\\07_Other')
-        print(f'{filename:<50}{arrow:^5}07_Other\n')
-
 print('done')
